@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		930A9C431E1417EA00CC6979 /* QRDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930A9C421E1417EA00CC6979 /* QRDetalleViewController.swift */; };
+		930A9C451E1420ED00CC6979 /* navegacionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930A9C441E1420ED00CC6979 /* navegacionController.swift */; };
+		930A9C471E14328F00CC6979 /* infoLugarTuristicoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930A9C461E14328F00CC6979 /* infoLugarTuristicoController.swift */; };
+		930A9C491E1439BA00CC6979 /* LugarTuristico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930A9C481E1439BA00CC6979 /* LugarTuristico.swift */; };
+		9320559D1E15C46100C509D0 /* TablaLugaresTuristicosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9320559C1E15C46100C509D0 /* TablaLugaresTuristicosViewController.swift */; };
+		9343C3F31E11806C00AA0ACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9343C3F21E11806C00AA0ACD /* AppDelegate.swift */; };
+		9343C3F81E11806C00AA0ACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9343C3F61E11806C00AA0ACD /* Main.storyboard */; };
+		9343C3FB1E11806C00AA0ACD /* SoyTurista.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9343C3F91E11806C00AA0ACD /* SoyTurista.xcdatamodeld */; };
+		9343C3FD1E11806C00AA0ACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9343C3FC1E11806C00AA0ACD /* Assets.xcassets */; };
+		9343C4001E11806C00AA0ACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9343C3FE1E11806C00AA0ACD /* LaunchScreen.storyboard */; };
+		9343C4141E11873400AA0ACD /* MapaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9343C4131E11873400AA0ACD /* MapaController.swift */; };
+		9343C4161E11874800AA0ACD /* QRController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9343C4151E11874800AA0ACD /* QRController.swift */; };
+		9343C41B1E1193F900AA0ACD /* AcercaDeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9343C41A1E1193F900AA0ACD /* AcercaDeController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		930A9C421E1417EA00CC6979 /* QRDetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRDetalleViewController.swift; sourceTree = "<group>"; };
+		930A9C441E1420ED00CC6979 /* navegacionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = navegacionController.swift; sourceTree = "<group>"; };
+		930A9C461E14328F00CC6979 /* infoLugarTuristicoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = infoLugarTuristicoController.swift; sourceTree = "<group>"; };
+		930A9C481E1439BA00CC6979 /* LugarTuristico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LugarTuristico.swift; sourceTree = "<group>"; };
+		9320559C1E15C46100C509D0 /* TablaLugaresTuristicosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TablaLugaresTuristicosViewController.swift; sourceTree = "<group>"; };
+		9343C3EF1E11806C00AA0ACD /* SoyTurista.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoyTurista.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9343C3F21E11806C00AA0ACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9343C3F71E11806C00AA0ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9343C3FA1E11806C00AA0ACD /* SoyTurista.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoyTurista.xcdatamodel; sourceTree = "<group>"; };
+		9343C3FC1E11806C00AA0ACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9343C3FF1E11806C00AA0ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9343C4011E11806C00AA0ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9343C4131E11873400AA0ACD /* MapaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapaController.swift; sourceTree = "<group>"; };
+		9343C4151E11874800AA0ACD /* QRController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRController.swift; sourceTree = "<group>"; };
+		9343C41A1E1193F900AA0ACD /* AcercaDeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcercaDeController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9343C3EC1E11806C00AA0ACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9343C3E61E11806C00AA0ACD = {
+			isa = PBXGroup;
+			children = (
+				9343C3F11E11806C00AA0ACD /* SoyTurista */,
+				9343C3F01E11806C00AA0ACD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9343C3F01E11806C00AA0ACD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9343C3EF1E11806C00AA0ACD /* SoyTurista.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9343C3F11E11806C00AA0ACD /* SoyTurista */ = {
+			isa = PBXGroup;
+			children = (
+				9343C4081E11812200AA0ACD /* Controller */,
+				9343C4071E11811A00AA0ACD /* Model */,
+				9343C3F21E11806C00AA0ACD /* AppDelegate.swift */,
+				9343C3F61E11806C00AA0ACD /* Main.storyboard */,
+				9343C3FC1E11806C00AA0ACD /* Assets.xcassets */,
+				9343C3FE1E11806C00AA0ACD /* LaunchScreen.storyboard */,
+				9343C4011E11806C00AA0ACD /* Info.plist */,
+				9343C3F91E11806C00AA0ACD /* SoyTurista.xcdatamodeld */,
+			);
+			path = SoyTurista;
+			sourceTree = "<group>";
+		};
+		9343C4071E11811A00AA0ACD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				930A9C481E1439BA00CC6979 /* LugarTuristico.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9343C4081E11812200AA0ACD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9343C4131E11873400AA0ACD /* MapaController.swift */,
+				9343C4151E11874800AA0ACD /* QRController.swift */,
+				9343C41A1E1193F900AA0ACD /* AcercaDeController.swift */,
+				930A9C421E1417EA00CC6979 /* QRDetalleViewController.swift */,
+				930A9C441E1420ED00CC6979 /* navegacionController.swift */,
+				930A9C461E14328F00CC6979 /* infoLugarTuristicoController.swift */,
+				9320559C1E15C46100C509D0 /* TablaLugaresTuristicosViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9343C3EE1E11806C00AA0ACD /* SoyTurista */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9343C4041E11806C00AA0ACD /* Build configuration list for PBXNativeTarget "SoyTurista" */;
+			buildPhases = (
+				9343C3EB1E11806C00AA0ACD /* Sources */,
+				9343C3EC1E11806C00AA0ACD /* Frameworks */,
+				9343C3ED1E11806C00AA0ACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoyTurista;
+			productName = SoyTurista;
+			productReference = 9343C3EF1E11806C00AA0ACD /* SoyTurista.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9343C3E71E11806C00AA0ACD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Aaron Marquez";
+				TargetAttributes = {
+					9343C3EE1E11806C00AA0ACD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2328WXVJ97;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9343C3EA1E11806C00AA0ACD /* Build configuration list for PBXProject "SoyTurista" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9343C3E61E11806C00AA0ACD;
+			productRefGroup = 9343C3F01E11806C00AA0ACD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9343C3EE1E11806C00AA0ACD /* SoyTurista */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9343C3ED1E11806C00AA0ACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9343C4001E11806C00AA0ACD /* LaunchScreen.storyboard in Resources */,
+				9343C3FD1E11806C00AA0ACD /* Assets.xcassets in Resources */,
+				9343C3F81E11806C00AA0ACD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9343C3EB1E11806C00AA0ACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9320559D1E15C46100C509D0 /* TablaLugaresTuristicosViewController.swift in Sources */,
+				9343C3FB1E11806C00AA0ACD /* SoyTurista.xcdatamodeld in Sources */,
+				930A9C451E1420ED00CC6979 /* navegacionController.swift in Sources */,
+				9343C3F31E11806C00AA0ACD /* AppDelegate.swift in Sources */,
+				9343C4161E11874800AA0ACD /* QRController.swift in Sources */,
+				930A9C431E1417EA00CC6979 /* QRDetalleViewController.swift in Sources */,
+				9343C41B1E1193F900AA0ACD /* AcercaDeController.swift in Sources */,
+				930A9C491E1439BA00CC6979 /* LugarTuristico.swift in Sources */,
+				930A9C471E14328F00CC6979 /* infoLugarTuristicoController.swift in Sources */,
+				9343C4141E11873400AA0ACD /* MapaController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9343C3F61E11806C00AA0ACD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9343C3F71E11806C00AA0ACD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9343C3FE1E11806C00AA0ACD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9343C3FF1E11806C00AA0ACD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9343C4021E11806C00AA0ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9343C4031E11806C00AA0ACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9343C4051E11806C00AA0ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2328WXVJ97;
+				INFOPLIST_FILE = SoyTurista/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaronmqz.SoyTurista;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9343C4061E11806C00AA0ACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2328WXVJ97;
+				INFOPLIST_FILE = SoyTurista/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaronmqz.SoyTurista;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9343C3EA1E11806C00AA0ACD /* Build configuration list for PBXProject "SoyTurista" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9343C4021E11806C00AA0ACD /* Debug */,
+				9343C4031E11806C00AA0ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9343C4041E11806C00AA0ACD /* Build configuration list for PBXNativeTarget "SoyTurista" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9343C4051E11806C00AA0ACD /* Debug */,
+				9343C4061E11806C00AA0ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9343C3F91E11806C00AA0ACD /* SoyTurista.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9343C3FA1E11806C00AA0ACD /* SoyTurista.xcdatamodel */,
+			);
+			currentVersion = 9343C3FA1E11806C00AA0ACD /* SoyTurista.xcdatamodel */;
+			path = SoyTurista.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9343C3E71E11806C00AA0ACD /* Project object */;
+}
