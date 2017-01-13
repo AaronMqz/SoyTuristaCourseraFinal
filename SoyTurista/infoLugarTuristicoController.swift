@@ -7,13 +7,13 @@
 //
 
 import UIKit
-
+import CoreLocation
 
 protocol InfoLugarTuristicoDelegado {
     func LugarTuristicoGuardado(datos: LugarTuristico)
 }
 
-class infoLugarTuristicoController: UIViewController , UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate{
+class infoLugarTuristicoController: UIViewController , UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate, CLLocationManagerDelegate{
 
     var objLuagrTuristico: LugarTuristico?
     var delegate: InfoLugarTuristicoDelegado?
@@ -25,9 +25,53 @@ class infoLugarTuristicoController: UIViewController , UIImagePickerControllerDe
     @IBOutlet weak var btnGuardar: UIButton!
     @IBOutlet weak var btnCancelar: UIButton!
     @IBOutlet weak var btnFoto: UIButton!
+    @IBOutlet weak var btnCompartir: UIButton!
+     private var manejador: CLLocationManager!
+    
+    func initLocation(){
+        manejador = CLLocationManager()
+        manejador.delegate = self
+        manejador.desiredAccuracy  = kCLLocationAccuracyBest
+        manejador.requestWhenInUseAuthorization()
+        manejador.startUpdatingLocation()
+    }
+    
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse{
+            manejador.startUpdatingLocation()
+          
+        }else{
+            manejador.stopUpdatingLocation()
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if manejador.location != nil{
+            //...
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        let alerta = UIAlertController(title: "Error", message: "error \(error._code), revisar permiso de ubicación", preferredStyle: .alert)
+        let accionOk = UIAlertAction(title: "Ok", style: .default, handler: {
+            (accion) in
+            //..Se reinician valores
+            
+        })
+        alerta.addAction(accionOk)
+        self.present(alerta, animated: true, completion: nil)
+    }
+
+    
+    
+ 
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        initElementos()
+        
         nombre.delegate = self
         descripcion.delegate = self
         
@@ -35,13 +79,29 @@ class infoLugarTuristicoController: UIViewController , UIImagePickerControllerDe
             nombre.text = objLuagrTuristico?.nombre
             descripcion.text = objLuagrTuristico?.descripcion
             foto.image = objLuagrTuristico?.foto
+            
             OcultarElementos()
             soloLectura()
         }
     }
+    
+    
+    
+    func initElementos(){
+        foto.isHidden = true
+        btnCompartir.isHidden = true
+        nombre.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 0)
+        descripcion.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 0)
+    }
 
     @IBAction func Cancelar(_ sender: Any) {
         ocultarVista()
+    }
+    
+    @IBAction func compartir(_ sender: Any) {
+        let objetosCompartir = [nombre.text!, descripcion.text!]
+        let actividadRD = UIActivityViewController(activityItems: objetosCompartir, applicationActivities: nil)
+        self.present(actividadRD, animated: true, completion: nil)
     }
     
     @IBAction func Guardar(_ sender: Any) {
@@ -69,6 +129,16 @@ class infoLugarTuristicoController: UIViewController , UIImagePickerControllerDe
     func soloLectura(){
         nombre.isEnabled = false
         descripcion.isEnabled = false
+        nombre.borderStyle = UITextBorderStyle.none
+        descripcion.borderStyle = UITextBorderStyle.none
+        nombre.backgroundColor = UIColor.clear
+        descripcion.backgroundColor = UIColor.clear
+        nombre.textColor = UIColor.white
+        descripcion.textColor = UIColor.white
+        foto.isHidden = false
+        btnCompartir.isHidden = false
+        nombre.backgroundColor = UIColor(colorLiteralRed: 0, green: 0, blue: 0, alpha: 0.3)
+        descripcion.backgroundColor = UIColor(colorLiteralRed: 0, green: 0, blue: 0, alpha: 0.3)
     }
     
     func OcultarElementos(){
@@ -97,7 +167,10 @@ class infoLugarTuristicoController: UIViewController , UIImagePickerControllerDe
         dismiss(animated: true, completion: nil)
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             foto.image = image
+            foto.isHidden = false
+            btnFoto.isHidden = true
         }
+        
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

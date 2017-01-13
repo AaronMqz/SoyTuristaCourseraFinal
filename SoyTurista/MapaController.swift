@@ -9,9 +9,11 @@
 import UIKit
 import MapKit
 import CoreLocation
+import CoreData
+import WatchConnectivity
 
-class MapaController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, InfoLugarTuristicoDelegado {
 
+class MapaController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, InfoLugarTuristicoDelegado , WCSessionDelegate{
 
     @IBOutlet weak var direccion: UILabel!
     @IBOutlet weak var mapa: MKMapView!
@@ -19,15 +21,85 @@ class MapaController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     private var destino: MKMapItem!
     private var manejador: CLLocationManager!
     private var pin:UIImageView!
-    
-    //public var lugares: [LugarTuristico]?
-    
+    private var contextoBD: NSManagedObjectContext? = nil
+    var wcSession: WCSession!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initMapa()
         initLocation()
-        globalLugaresTuristicos = []
+        initBD()
+        globalLugaresTuristicos = obtenerRutasBD()
+        pintarRutasGuardadas()
+    }
+    
+    
+    @IBAction func sendAppleWatch(_ sender: Any) {
+        enviarMensajeAppleWatch()
+    }
+    
+    func enviarMensajeAppleWatch (){
+        wcSession = WCSession.default()
+        wcSession.delegate = self
+        wcSession.activate()
+        for location in globalLugaresTuristicos{
+            let message = ["lat": location.latitud as? CLLocationDegrees, "lon" : location.longitud as? CLLocationDegrees]
+            wcSession.sendMessage(message, replyHandler: nil, errorHandler: {Error in print(Error.localizedDescription)})
+        }
+    }
+    
+    func initBD(){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        contextoBD = appDelegate.persistentContainer.viewContext
+    }
+    
+    func initObtenerRutasGuardadas(){
+        globalLugaresTuristicos = obtenerRutasBD()
+    
+    }
+    
+    func obtenerRutasBD() -> [LugarTuristico]{
+        var lugaresTuristicos = [LugarTuristico]()
+        let request = NSFetchRequest<NSFetchRequestResult>.init(entityName: "LugaresTuristico")
+        request.returnsObjectsAsFaults = false
+        
+        do{
+            let results = try contextoBD?.fetch(request)
+            if (results?.count)! > 0
+            {
+                for result in results as! [NSManagedObject]
+                {
+                    let rutaDeBD = LugarTuristico()
+                    if let nombre = result.value(forKey: "nombre") as? String
+                    {
+                        rutaDeBD.nombre = nombre
+                    }
+                    if let descripcion = result.value(forKey: "descripcion") as? String
+                    {
+                        rutaDeBD.descripcion = descripcion
+                    }
+                    if let foto = result.value(forKey: "foto") as? NSData
+                    {
+                        rutaDeBD.foto = UIImage(data: foto as Data)
+                    }
+                    if let latitud = result.value(forKey: "latitud") as? Decimal
+                    {
+                        rutaDeBD.latitud = latitud as NSObject?
+                    }
+                    if let longitud = result.value(forKey: "longitud") as? Decimal
+                    {
+                        rutaDeBD.longitud = longitud as NSObject?
+                    }
+                    
+                    lugaresTuristicos.append(rutaDeBD)
+                }
+            }
+            
+        }catch{
+            print("mal al obtener BD")
+        }
+        
+        return lugaresTuristicos
     }
     
     func initMapa(){
@@ -68,6 +140,24 @@ class MapaController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     }
     
     
+    func pintarRutasGuardadas(){
+    
+        for ruta in globalLugaresTuristicos {
+            let point = MKPointAnnotation()
+            point.coordinate = CLLocationCoordinate2D(latitude: ruta.latitud as! CLLocationDegrees, longitude: ruta.longitud as! CLLocationDegrees)
+            point.title = direccion.text
+            mapa.addAnnotation(point)
+            
+            let locationItemDestino = CLLocation(latitude: ruta.latitud as! CLLocationDegrees, longitude: ruta.longitud as! CLLocationDegrees)
+            let itemDestino = crearMapItem(ubicacion: locationItemDestino)
+            
+            crearRuta(itemDestino: itemDestino)
+        }
+    
+    }
+    
+    
+    
     /* Delegado de infoLugarTuristicoController */
     func LugarTuristicoGuardado(datos: LugarTuristico) {
         
@@ -85,9 +175,28 @@ class MapaController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         datos.longitud = newCoor.longitude as NSObject
         globalLugaresTuristicos.append(datos)
         
+        GuardarLUgarTuristicoBD(datos: datos)
         crearRuta(itemDestino: itemDestino)
     }
 
+    
+    
+    func GuardarLUgarTuristicoBD(datos: LugarTuristico){
+        let nuevoLugarTuristicoBD = NSEntityDescription.insertNewObject(forEntityName: "LugaresTuristico", into: contextoBD!)
+        
+        nuevoLugarTuristicoBD.setValue(datos.nombre, forKey: "nombre")
+        nuevoLugarTuristicoBD.setValue(datos.descripcion, forKey: "descripcion")
+        nuevoLugarTuristicoBD.setValue(UIImagePNGRepresentation(datos.foto!), forKey: "foto")
+        nuevoLugarTuristicoBD.setValue(datos.latitud, forKey: "latitud")
+        nuevoLugarTuristicoBD.setValue(datos.longitud, forKey: "longitud")
+        
+        do{
+            try self.contextoBD?.save()
+        }catch{
+            print("algo paso :(")
+        }
+        
+    }
     
     func crearMapItem(ubicacion: CLLocation) -> MKMapItem{
         let puntoCoor = CLLocationCoordinate2D(latitude: ubicacion.coordinate.latitude, longitude: ubicacion.coordinate.longitude)
@@ -177,10 +286,8 @@ class MapaController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if manejador.location != nil{
-
+            //...
         }
-    
-        //print(locations)
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
@@ -199,9 +306,6 @@ class MapaController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     
     func reverseGeocodeCoordinate(location: CLLocation){
-        //CLGeocoder.reverseGeocodeLocation(coordinate)
-       
-        
         var title = ""
         CLGeocoder().reverseGeocodeLocation(location, completionHandler: { (placemarks, error) -> Void in
            
@@ -226,14 +330,18 @@ class MapaController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             }
             
             self.direccion.text = title
-            //places.append(["name":title,"lat":"\(newCoordinate.latitude)", "lon":"\(newCoordinate.longitude)"])
-            //let annotation  = MKPointAnnotation()
-            //annotation.coordinate = newCoordinate
-            //annotation.title = title
-            //self.mapView.addAnnotation(annotation)
-            
+
         })
-        //print(title)
-        //return title
     }
+    
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?){
+        
+    }
+    func sessionDidBecomeInactive(_ session: WCSession) {
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+    }
+
 }

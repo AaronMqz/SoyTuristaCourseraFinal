@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="LugaresTuristico" representedClassName="LugaresTuristico" syncable="YES" codeGenerationType="class">
+        <attribute name="descripcion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="foto" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="latitud" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitud" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="LugaresTuristico" positionX="-54" positionY="-9" width="128" height="120"/>
+    </elements>
 </model>

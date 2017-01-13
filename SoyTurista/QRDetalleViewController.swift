@@ -28,7 +28,5 @@ class QRDetalleViewController: UIViewController {
         }
     }
     
-    
-
 
 }

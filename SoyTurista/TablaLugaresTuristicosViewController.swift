@@ -7,17 +7,19 @@
 //
 
 import UIKit
+import  CoreData
 
 class TablaLugaresTuristicosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     private var indexPathCell:Int = 0
     private var lugarSeleccionado:LugarTuristico?
     @IBOutlet weak var tabla: UITableView!
+    var contextoBD: NSManagedObjectContext? = nil
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    }
+    }    
 
     override func viewWillAppear(_ animated: Bool) {
         self.tabla.reloadData()
@@ -30,11 +32,9 @@ class TablaLugaresTuristicosViewController: UIViewController, UITableViewDataSou
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "celdaLugaresTuristicos")!
         
-        
-        for obj in globalLugaresTuristicos{
-            cell.textLabel?.text = obj.nombre
-            cell.detailTextLabel?.text = obj.descripcion
-        }
+        let obj = globalLugaresTuristicos[indexPath.row]
+        cell.textLabel?.text = obj.nombre
+        cell.detailTextLabel?.text = obj.descripcion
 
         return cell
     }

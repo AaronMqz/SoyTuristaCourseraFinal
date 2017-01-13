@@ -11,6 +11,21 @@
 		930A9C451E1420ED00CC6979 /* navegacionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930A9C441E1420ED00CC6979 /* navegacionController.swift */; };
 		930A9C471E14328F00CC6979 /* infoLugarTuristicoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930A9C461E14328F00CC6979 /* infoLugarTuristicoController.swift */; };
 		930A9C491E1439BA00CC6979 /* LugarTuristico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930A9C481E1439BA00CC6979 /* LugarTuristico.swift */; };
+		931427C51E25E3C500208073 /* ARAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931427BF1E25E3C500208073 /* ARAnnotation.swift */; };
+		931427C61E25E3C500208073 /* ARAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931427C01E25E3C500208073 /* ARAnnotationView.swift */; };
+		931427C71E25E3C500208073 /* ARConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931427C11E25E3C500208073 /* ARConfiguration.swift */; };
+		931427C81E25E3C500208073 /* ARTrackingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931427C21E25E3C500208073 /* ARTrackingManager.swift */; };
+		931427C91E25E3C500208073 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931427C31E25E3C500208073 /* ARViewController.swift */; };
+		931427D01E25E3FC00208073 /* DebugMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931427CF1E25E3FC00208073 /* DebugMapViewController.swift */; };
+		931427D51E25E41A00208073 /* DebugMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 931427D11E25E41A00208073 /* DebugMapViewController.xib */; };
+		931427D61E25E41A00208073 /* hdar_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 931427D21E25E41A00208073 /* hdar_close.png */; };
+		931427D71E25E41A00208073 /* hdar_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 931427D31E25E41A00208073 /* hdar_close@2x.png */; };
+		931427D81E25E41A00208073 /* hdar_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 931427D41E25E41A00208073 /* hdar_close@3x.png */; };
+		931427DB1E25E4F800208073 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931427DA1E25E4F800208073 /* MapKit.framework */; };
+		931427DD1E25E50A00208073 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931427DC1E25E50A00208073 /* CoreMotion.framework */; };
+		931427DF1E25E51100208073 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931427DE1E25E51100208073 /* CoreLocation.framework */; };
+		931427E11E25E5EE00208073 /* RAController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931427E01E25E5EE00208073 /* RAController.swift */; };
+		931427E31E25E66000208073 /* TestAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931427E21E25E66000208073 /* TestAnnotationView.swift */; };
 		9320559D1E15C46100C509D0 /* TablaLugaresTuristicosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9320559C1E15C46100C509D0 /* TablaLugaresTuristicosViewController.swift */; };
 		9343C3F31E11806C00AA0ACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9343C3F21E11806C00AA0ACD /* AppDelegate.swift */; };
 		9343C3F81E11806C00AA0ACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9343C3F61E11806C00AA0ACD /* Main.storyboard */; };
@@ -20,13 +35,77 @@
 		9343C4141E11873400AA0ACD /* MapaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9343C4131E11873400AA0ACD /* MapaController.swift */; };
 		9343C4161E11874800AA0ACD /* QRController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9343C4151E11874800AA0ACD /* QRController.swift */; };
 		9343C41B1E1193F900AA0ACD /* AcercaDeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9343C41A1E1193F900AA0ACD /* AcercaDeController.swift */; };
+		937BF4771E2741D800DC4219 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 937BF4751E2741D800DC4219 /* Interface.storyboard */; };
+		937BF4791E2741D800DC4219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937BF4781E2741D800DC4219 /* Assets.xcassets */; };
+		937BF4801E2741D800DC4219 /* SoyTuristaWatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 937BF47F1E2741D800DC4219 /* SoyTuristaWatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		937BF4851E2741D800DC4219 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937BF4841E2741D800DC4219 /* InterfaceController.swift */; };
+		937BF4871E2741D800DC4219 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937BF4861E2741D800DC4219 /* ExtensionDelegate.swift */; };
+		937BF4891E2741D800DC4219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 937BF4881E2741D800DC4219 /* Assets.xcassets */; };
+		937BF48E1E2741D800DC4219 /* SoyTuristaWatchKit.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 937BF4731E2741D800DC4219 /* SoyTuristaWatchKit.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		937BF4811E2741D800DC4219 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9343C3E71E11806C00AA0ACD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 937BF47E1E2741D800DC4219;
+			remoteInfo = "SoyTuristaWatchKit Extension";
+		};
+		937BF48B1E2741D800DC4219 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9343C3E71E11806C00AA0ACD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 937BF4721E2741D800DC4219;
+			remoteInfo = SoyTuristaWatchKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		937BF48D1E2741D800DC4219 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				937BF48E1E2741D800DC4219 /* SoyTuristaWatchKit.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		937BF4941E2741D800DC4219 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				937BF4801E2741D800DC4219 /* SoyTuristaWatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		930A9C421E1417EA00CC6979 /* QRDetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRDetalleViewController.swift; sourceTree = "<group>"; };
 		930A9C441E1420ED00CC6979 /* navegacionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = navegacionController.swift; sourceTree = "<group>"; };
 		930A9C461E14328F00CC6979 /* infoLugarTuristicoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = infoLugarTuristicoController.swift; sourceTree = "<group>"; };
 		930A9C481E1439BA00CC6979 /* LugarTuristico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LugarTuristico.swift; sourceTree = "<group>"; };
+		931427BF1E25E3C500208073 /* ARAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARAnnotation.swift; sourceTree = "<group>"; };
+		931427C01E25E3C500208073 /* ARAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARAnnotationView.swift; sourceTree = "<group>"; };
+		931427C11E25E3C500208073 /* ARConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARConfiguration.swift; sourceTree = "<group>"; };
+		931427C21E25E3C500208073 /* ARTrackingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARTrackingManager.swift; sourceTree = "<group>"; };
+		931427C31E25E3C500208073 /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		931427CF1E25E3FC00208073 /* DebugMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugMapViewController.swift; sourceTree = "<group>"; };
+		931427D11E25E41A00208073 /* DebugMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DebugMapViewController.xib; sourceTree = "<group>"; };
+		931427D21E25E41A00208073 /* hdar_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hdar_close.png; sourceTree = "<group>"; };
+		931427D31E25E41A00208073 /* hdar_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hdar_close@2x.png"; sourceTree = "<group>"; };
+		931427D41E25E41A00208073 /* hdar_close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hdar_close@3x.png"; sourceTree = "<group>"; };
+		931427DA1E25E4F800208073 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		931427DC1E25E50A00208073 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		931427DE1E25E51100208073 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		931427E01E25E5EE00208073 /* RAController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAController.swift; sourceTree = "<group>"; };
+		931427E21E25E66000208073 /* TestAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAnnotationView.swift; sourceTree = "<group>"; };
 		9320559C1E15C46100C509D0 /* TablaLugaresTuristicosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TablaLugaresTuristicosViewController.swift; sourceTree = "<group>"; };
 		9343C3EF1E11806C00AA0ACD /* SoyTurista.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoyTurista.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9343C3F21E11806C00AA0ACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,10 +117,29 @@
 		9343C4131E11873400AA0ACD /* MapaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapaController.swift; sourceTree = "<group>"; };
 		9343C4151E11874800AA0ACD /* QRController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRController.swift; sourceTree = "<group>"; };
 		9343C41A1E1193F900AA0ACD /* AcercaDeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcercaDeController.swift; sourceTree = "<group>"; };
+		937BF4731E2741D800DC4219 /* SoyTuristaWatchKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoyTuristaWatchKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		937BF4761E2741D800DC4219 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		937BF4781E2741D800DC4219 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		937BF47A1E2741D800DC4219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		937BF47F1E2741D800DC4219 /* SoyTuristaWatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SoyTuristaWatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		937BF4841E2741D800DC4219 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		937BF4861E2741D800DC4219 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		937BF4881E2741D800DC4219 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		937BF48A1E2741D800DC4219 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9343C3EC1E11806C00AA0ACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				931427DF1E25E51100208073 /* CoreLocation.framework in Frameworks */,
+				931427DD1E25E50A00208073 /* CoreMotion.framework in Frameworks */,
+				931427DB1E25E4F800208073 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		937BF47C1E2741D800DC4219 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -51,11 +149,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		931427BD1E25E3A500208073 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				931427BE1E25E3AF00208073 /* RealidadAumentada */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		931427BE1E25E3AF00208073 /* RealidadAumentada */ = {
+			isa = PBXGroup;
+			children = (
+				931427CE1E25E3EF00208073 /* Resources */,
+				931427CB1E25E3CE00208073 /* Debug */,
+				931427BF1E25E3C500208073 /* ARAnnotation.swift */,
+				931427C01E25E3C500208073 /* ARAnnotationView.swift */,
+				931427C11E25E3C500208073 /* ARConfiguration.swift */,
+				931427C21E25E3C500208073 /* ARTrackingManager.swift */,
+				931427C31E25E3C500208073 /* ARViewController.swift */,
+				931427E21E25E66000208073 /* TestAnnotationView.swift */,
+			);
+			name = RealidadAumentada;
+			sourceTree = "<group>";
+		};
+		931427CB1E25E3CE00208073 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				931427CF1E25E3FC00208073 /* DebugMapViewController.swift */,
+			);
+			name = Debug;
+			sourceTree = "<group>";
+		};
+		931427CE1E25E3EF00208073 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				931427D11E25E41A00208073 /* DebugMapViewController.xib */,
+				931427D21E25E41A00208073 /* hdar_close.png */,
+				931427D31E25E41A00208073 /* hdar_close@2x.png */,
+				931427D41E25E41A00208073 /* hdar_close@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		931427D91E25E4F800208073 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				931427DE1E25E51100208073 /* CoreLocation.framework */,
+				931427DC1E25E50A00208073 /* CoreMotion.framework */,
+				931427DA1E25E4F800208073 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9343C3E61E11806C00AA0ACD = {
 			isa = PBXGroup;
 			children = (
 				9343C3F11E11806C00AA0ACD /* SoyTurista */,
+				937BF4741E2741D800DC4219 /* SoyTuristaWatchKit */,
+				937BF4831E2741D800DC4219 /* SoyTuristaWatchKit Extension */,
 				9343C3F01E11806C00AA0ACD /* Products */,
+				931427D91E25E4F800208073 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +216,8 @@
 			isa = PBXGroup;
 			children = (
 				9343C3EF1E11806C00AA0ACD /* SoyTurista.app */,
+				937BF4731E2741D800DC4219 /* SoyTuristaWatchKit.app */,
+				937BF47F1E2741D800DC4219 /* SoyTuristaWatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +225,7 @@
 		9343C3F11E11806C00AA0ACD /* SoyTurista */ = {
 			isa = PBXGroup;
 			children = (
+				931427BD1E25E3A500208073 /* Components */,
 				9343C4081E11812200AA0ACD /* Controller */,
 				9343C4071E11811A00AA0ACD /* Model */,
 				9343C3F21E11806C00AA0ACD /* AppDelegate.swift */,
@@ -100,8 +256,30 @@
 				930A9C441E1420ED00CC6979 /* navegacionController.swift */,
 				930A9C461E14328F00CC6979 /* infoLugarTuristicoController.swift */,
 				9320559C1E15C46100C509D0 /* TablaLugaresTuristicosViewController.swift */,
+				931427E01E25E5EE00208073 /* RAController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		937BF4741E2741D800DC4219 /* SoyTuristaWatchKit */ = {
+			isa = PBXGroup;
+			children = (
+				937BF4751E2741D800DC4219 /* Interface.storyboard */,
+				937BF4781E2741D800DC4219 /* Assets.xcassets */,
+				937BF47A1E2741D800DC4219 /* Info.plist */,
+			);
+			path = SoyTuristaWatchKit;
+			sourceTree = "<group>";
+		};
+		937BF4831E2741D800DC4219 /* SoyTuristaWatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				937BF4841E2741D800DC4219 /* InterfaceController.swift */,
+				937BF4861E2741D800DC4219 /* ExtensionDelegate.swift */,
+				937BF4881E2741D800DC4219 /* Assets.xcassets */,
+				937BF48A1E2741D800DC4219 /* Info.plist */,
+			);
+			path = "SoyTuristaWatchKit Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,15 +292,51 @@
 				9343C3EB1E11806C00AA0ACD /* Sources */,
 				9343C3EC1E11806C00AA0ACD /* Frameworks */,
 				9343C3ED1E11806C00AA0ACD /* Resources */,
+				937BF48D1E2741D800DC4219 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				937BF48C1E2741D800DC4219 /* PBXTargetDependency */,
 			);
 			name = SoyTurista;
 			productName = SoyTurista;
 			productReference = 9343C3EF1E11806C00AA0ACD /* SoyTurista.app */;
 			productType = "com.apple.product-type.application";
+		};
+		937BF4721E2741D800DC4219 /* SoyTuristaWatchKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 937BF4951E2741D800DC4219 /* Build configuration list for PBXNativeTarget "SoyTuristaWatchKit" */;
+			buildPhases = (
+				937BF4711E2741D800DC4219 /* Resources */,
+				937BF4941E2741D800DC4219 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				937BF4821E2741D800DC4219 /* PBXTargetDependency */,
+			);
+			name = SoyTuristaWatchKit;
+			productName = SoyTuristaWatchKit;
+			productReference = 937BF4731E2741D800DC4219 /* SoyTuristaWatchKit.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		937BF47E1E2741D800DC4219 /* SoyTuristaWatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 937BF4931E2741D800DC4219 /* Build configuration list for PBXNativeTarget "SoyTuristaWatchKit Extension" */;
+			buildPhases = (
+				937BF47B1E2741D800DC4219 /* Sources */,
+				937BF47C1E2741D800DC4219 /* Frameworks */,
+				937BF47D1E2741D800DC4219 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SoyTuristaWatchKit Extension";
+			productName = "SoyTuristaWatchKit Extension";
+			productReference = 937BF47F1E2741D800DC4219 /* SoyTuristaWatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -135,6 +349,16 @@
 				ORGANIZATIONNAME = "Aaron Marquez";
 				TargetAttributes = {
 					9343C3EE1E11806C00AA0ACD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2328WXVJ97;
+						ProvisioningStyle = Automatic;
+					};
+					937BF4721E2741D800DC4219 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2328WXVJ97;
+						ProvisioningStyle = Automatic;
+					};
+					937BF47E1E2741D800DC4219 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 2328WXVJ97;
 						ProvisioningStyle = Automatic;
@@ -155,6 +379,8 @@
 			projectRoot = "";
 			targets = (
 				9343C3EE1E11806C00AA0ACD /* SoyTurista */,
+				937BF4721E2741D800DC4219 /* SoyTuristaWatchKit */,
+				937BF47E1E2741D800DC4219 /* SoyTuristaWatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -165,8 +391,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				9343C4001E11806C00AA0ACD /* LaunchScreen.storyboard in Resources */,
+				931427D61E25E41A00208073 /* hdar_close.png in Resources */,
+				931427D81E25E41A00208073 /* hdar_close@3x.png in Resources */,
 				9343C3FD1E11806C00AA0ACD /* Assets.xcassets in Resources */,
 				9343C3F81E11806C00AA0ACD /* Main.storyboard in Resources */,
+				931427D71E25E41A00208073 /* hdar_close@2x.png in Resources */,
+				931427D51E25E41A00208073 /* DebugMapViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		937BF4711E2741D800DC4219 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				937BF4791E2741D800DC4219 /* Assets.xcassets in Resources */,
+				937BF4771E2741D800DC4219 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		937BF47D1E2741D800DC4219 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				937BF4891E2741D800DC4219 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,20 +424,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				931427D01E25E3FC00208073 /* DebugMapViewController.swift in Sources */,
+				931427E31E25E66000208073 /* TestAnnotationView.swift in Sources */,
 				9320559D1E15C46100C509D0 /* TablaLugaresTuristicosViewController.swift in Sources */,
+				931427C51E25E3C500208073 /* ARAnnotation.swift in Sources */,
 				9343C3FB1E11806C00AA0ACD /* SoyTurista.xcdatamodeld in Sources */,
+				931427C71E25E3C500208073 /* ARConfiguration.swift in Sources */,
 				930A9C451E1420ED00CC6979 /* navegacionController.swift in Sources */,
 				9343C3F31E11806C00AA0ACD /* AppDelegate.swift in Sources */,
 				9343C4161E11874800AA0ACD /* QRController.swift in Sources */,
 				930A9C431E1417EA00CC6979 /* QRDetalleViewController.swift in Sources */,
 				9343C41B1E1193F900AA0ACD /* AcercaDeController.swift in Sources */,
+				931427C91E25E3C500208073 /* ARViewController.swift in Sources */,
 				930A9C491E1439BA00CC6979 /* LugarTuristico.swift in Sources */,
 				930A9C471E14328F00CC6979 /* infoLugarTuristicoController.swift in Sources */,
+				931427C81E25E3C500208073 /* ARTrackingManager.swift in Sources */,
+				931427C61E25E3C500208073 /* ARAnnotationView.swift in Sources */,
 				9343C4141E11873400AA0ACD /* MapaController.swift in Sources */,
+				931427E11E25E5EE00208073 /* RAController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		937BF47B1E2741D800DC4219 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				937BF4871E2741D800DC4219 /* ExtensionDelegate.swift in Sources */,
+				937BF4851E2741D800DC4219 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		937BF4821E2741D800DC4219 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 937BF47E1E2741D800DC4219 /* SoyTuristaWatchKit Extension */;
+			targetProxy = 937BF4811E2741D800DC4219 /* PBXContainerItemProxy */;
+		};
+		937BF48C1E2741D800DC4219 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 937BF4721E2741D800DC4219 /* SoyTuristaWatchKit */;
+			targetProxy = 937BF48B1E2741D800DC4219 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9343C3F61E11806C00AA0ACD /* Main.storyboard */ = {
@@ -207,6 +484,14 @@
 				9343C3FF1E11806C00AA0ACD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		937BF4751E2741D800DC4219 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				937BF4761E2741D800DC4219 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -331,6 +616,76 @@
 			};
 			name = Release;
 		};
+		937BF48F1E2741D800DC4219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2328WXVJ97;
+				IBSC_MODULE = SoyTuristaWatchKit_Extension;
+				INFOPLIST_FILE = SoyTuristaWatchKit/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaronmqz.SoyTurista.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		937BF4901E2741D800DC4219 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2328WXVJ97;
+				IBSC_MODULE = SoyTuristaWatchKit_Extension;
+				INFOPLIST_FILE = SoyTuristaWatchKit/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaronmqz.SoyTurista.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		937BF4911E2741D800DC4219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 2328WXVJ97;
+				INFOPLIST_FILE = "SoyTuristaWatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaronmqz.SoyTurista.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		937BF4921E2741D800DC4219 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 2328WXVJ97;
+				INFOPLIST_FILE = "SoyTuristaWatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aaronmqz.SoyTurista.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -348,6 +703,24 @@
 			buildConfigurations = (
 				9343C4051E11806C00AA0ACD /* Debug */,
 				9343C4061E11806C00AA0ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		937BF4931E2741D800DC4219 /* Build configuration list for PBXNativeTarget "SoyTuristaWatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				937BF4911E2741D800DC4219 /* Debug */,
+				937BF4921E2741D800DC4219 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		937BF4951E2741D800DC4219 /* Build configuration list for PBXNativeTarget "SoyTuristaWatchKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				937BF48F1E2741D800DC4219 /* Debug */,
+				937BF4901E2741D800DC4219 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

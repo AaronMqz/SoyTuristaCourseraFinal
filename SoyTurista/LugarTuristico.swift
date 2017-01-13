@@ -11,9 +11,9 @@ import UIKit
 
 
 public class  LugarTuristico {
-    var nombre: String
+    var nombre: String?
     var foto: UIImage?
-    var descripcion: String
+    var descripcion: String?
     var latitud: NSObject?
     var longitud: NSObject?
     
@@ -21,6 +21,9 @@ public class  LugarTuristico {
         nombre = _nombre
         foto = _foto
         descripcion = _descripcion
+    }
+    
+    init(){
     }
     
 }
