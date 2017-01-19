@@ -25,7 +25,7 @@ public class  LugarTuristico {
     
     init(){
     }
-    
+
 }
 
 var globalLugaresTuristicos = [LugarTuristico]()

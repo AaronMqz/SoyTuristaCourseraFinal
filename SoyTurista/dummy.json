@@ -1,0 +1,35 @@
+{
+    "eventos": {
+        
+        "evento1":{
+               "fecha": "01/01/2017",
+               "nombre": "Alejando Fernandez",
+               "descripcion": "en vivo en palenque"
+               },
+        "evento2": {
+               "fecha": "02/01/2017",
+               "nombre": "Alejandra Guzman",
+               "descripcion": "en vivo en palenque"
+               },
+        "evento3":       {
+               "fecha": "03/01/2017",
+               "nombre": "Pepe Aguilar",
+               "descripcion": "en vivo en palenque"
+               },
+         "evento4":      {
+               "fecha": "04/01/2017",
+               "nombre": "Intocable",
+               "descripcion": "en vivo en palenque"
+               },
+         "evento5":     {
+               "fecha": "05/01/2017",
+               "nombre": "Juan Gabriel",
+               "descripcion": "en vivo en palenque"
+               },
+           "evento6":    {
+               "fecha": "06/01/2017",
+               "nombre": "Vicente Fernandez",
+               "descripcion": "en vivo en palenque"
+               }
+    }
+}

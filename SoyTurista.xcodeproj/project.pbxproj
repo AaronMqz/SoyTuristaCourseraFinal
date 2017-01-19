@@ -27,6 +27,12 @@
 		931427E11E25E5EE00208073 /* RAController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931427E01E25E5EE00208073 /* RAController.swift */; };
 		931427E31E25E66000208073 /* TestAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931427E21E25E66000208073 /* TestAnnotationView.swift */; };
 		9320559D1E15C46100C509D0 /* TablaLugaresTuristicosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9320559C1E15C46100C509D0 /* TablaLugaresTuristicosViewController.swift */; };
+		9337CCFA1E3099B500504D9F /* dummy.json in Resources */ = {isa = PBXBuildFile; fileRef = 9337CCF91E3099B500504D9F /* dummy.json */; };
+		9337CCFE1E309A0700504D9F /* EventosBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9337CCFD1E309A0700504D9F /* EventosBE.swift */; };
+		9337CD001E309A9500504D9F /* EventosDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9337CCFF1E309A9500504D9F /* EventosDO.swift */; };
+		9337CD061E309D7200504D9F /* EventoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9337CD041E309D7200504D9F /* EventoViewCell.swift */; };
+		9337CD071E309D7200504D9F /* EventoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9337CD051E309D7200504D9F /* EventoViewCell.xib */; };
+		9337CD091E30A68F00504D9F /* EventosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9337CD081E30A68F00504D9F /* EventosViewController.swift */; };
 		9343C3F31E11806C00AA0ACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9343C3F21E11806C00AA0ACD /* AppDelegate.swift */; };
 		9343C3F81E11806C00AA0ACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9343C3F61E11806C00AA0ACD /* Main.storyboard */; };
 		9343C3FB1E11806C00AA0ACD /* SoyTurista.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9343C3F91E11806C00AA0ACD /* SoyTurista.xcdatamodeld */; };
@@ -107,6 +113,12 @@
 		931427E01E25E5EE00208073 /* RAController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAController.swift; sourceTree = "<group>"; };
 		931427E21E25E66000208073 /* TestAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAnnotationView.swift; sourceTree = "<group>"; };
 		9320559C1E15C46100C509D0 /* TablaLugaresTuristicosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TablaLugaresTuristicosViewController.swift; sourceTree = "<group>"; };
+		9337CCF91E3099B500504D9F /* dummy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dummy.json; sourceTree = "<group>"; };
+		9337CCFD1E309A0700504D9F /* EventosBE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventosBE.swift; sourceTree = "<group>"; };
+		9337CCFF1E309A9500504D9F /* EventosDO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventosDO.swift; sourceTree = "<group>"; };
+		9337CD041E309D7200504D9F /* EventoViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventoViewCell.swift; sourceTree = "<group>"; };
+		9337CD051E309D7200504D9F /* EventoViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventoViewCell.xib; sourceTree = "<group>"; };
+		9337CD081E30A68F00504D9F /* EventosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventosViewController.swift; sourceTree = "<group>"; };
 		9343C3EF1E11806C00AA0ACD /* SoyTurista.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoyTurista.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9343C3F21E11806C00AA0ACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9343C3F71E11806C00AA0ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -152,6 +164,7 @@
 		931427BD1E25E3A500208073 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				9337CD031E309D3E00504D9F /* EventoCeldaPersonalizada */,
 				931427BE1E25E3AF00208073 /* RealidadAumentada */,
 			);
 			name = Components;
@@ -201,6 +214,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9337CD031E309D3E00504D9F /* EventoCeldaPersonalizada */ = {
+			isa = PBXGroup;
+			children = (
+				9337CD041E309D7200504D9F /* EventoViewCell.swift */,
+				9337CD051E309D7200504D9F /* EventoViewCell.xib */,
+			);
+			name = EventoCeldaPersonalizada;
+			sourceTree = "<group>";
+		};
 		9343C3E61E11806C00AA0ACD = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +264,9 @@
 			isa = PBXGroup;
 			children = (
 				930A9C481E1439BA00CC6979 /* LugarTuristico.swift */,
+				9337CCF91E3099B500504D9F /* dummy.json */,
+				9337CCFD1E309A0700504D9F /* EventosBE.swift */,
+				9337CCFF1E309A9500504D9F /* EventosDO.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -257,6 +282,7 @@
 				930A9C461E14328F00CC6979 /* infoLugarTuristicoController.swift */,
 				9320559C1E15C46100C509D0 /* TablaLugaresTuristicosViewController.swift */,
 				931427E01E25E5EE00208073 /* RAController.swift */,
+				9337CD081E30A68F00504D9F /* EventosViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -396,6 +422,8 @@
 				9343C3FD1E11806C00AA0ACD /* Assets.xcassets in Resources */,
 				9343C3F81E11806C00AA0ACD /* Main.storyboard in Resources */,
 				931427D71E25E41A00208073 /* hdar_close@2x.png in Resources */,
+				9337CCFA1E3099B500504D9F /* dummy.json in Resources */,
+				9337CD071E309D7200504D9F /* EventoViewCell.xib in Resources */,
 				931427D51E25E41A00208073 /* DebugMapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,22 +453,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				931427D01E25E3FC00208073 /* DebugMapViewController.swift in Sources */,
+				9337CCFE1E309A0700504D9F /* EventosBE.swift in Sources */,
 				931427E31E25E66000208073 /* TestAnnotationView.swift in Sources */,
 				9320559D1E15C46100C509D0 /* TablaLugaresTuristicosViewController.swift in Sources */,
 				931427C51E25E3C500208073 /* ARAnnotation.swift in Sources */,
 				9343C3FB1E11806C00AA0ACD /* SoyTurista.xcdatamodeld in Sources */,
 				931427C71E25E3C500208073 /* ARConfiguration.swift in Sources */,
 				930A9C451E1420ED00CC6979 /* navegacionController.swift in Sources */,
+				9337CD061E309D7200504D9F /* EventoViewCell.swift in Sources */,
 				9343C3F31E11806C00AA0ACD /* AppDelegate.swift in Sources */,
 				9343C4161E11874800AA0ACD /* QRController.swift in Sources */,
 				930A9C431E1417EA00CC6979 /* QRDetalleViewController.swift in Sources */,
 				9343C41B1E1193F900AA0ACD /* AcercaDeController.swift in Sources */,
+				9337CD001E309A9500504D9F /* EventosDO.swift in Sources */,
 				931427C91E25E3C500208073 /* ARViewController.swift in Sources */,
 				930A9C491E1439BA00CC6979 /* LugarTuristico.swift in Sources */,
 				930A9C471E14328F00CC6979 /* infoLugarTuristicoController.swift in Sources */,
 				931427C81E25E3C500208073 /* ARTrackingManager.swift in Sources */,
 				931427C61E25E3C500208073 /* ARAnnotationView.swift in Sources */,
 				9343C4141E11873400AA0ACD /* MapaController.swift in Sources */,
+				9337CD091E30A68F00504D9F /* EventosViewController.swift in Sources */,
 				931427E11E25E5EE00208073 /* RAController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
